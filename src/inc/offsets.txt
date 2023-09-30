@@ -1,0 +1,13 @@
+00 28 9f 97 bf ?? ?? ?? ?? 00 08 //LOCALPLAYER PTR
+x  x  x  x  x  ?  ?  ?  ?  x  x
+
+
+28 76 ?? 5c fb 7f ?? 00 20 //ENTITYLIST PTR
+x  x  ?  x  x  x  ?  x  x
+
+
+
+00 20 03 00 00 26 03 00 00 21 03 00 00 27 // viewmatrix - 51
+x  x  x  x  x  x  x  x  x  x  x  x  x  x
+
+
