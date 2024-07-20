@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"*.aiml": "xml",
+		"filesystem": "cpp",
+		"xstring": "cpp"
+	}
+}

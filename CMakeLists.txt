@@ -20,14 +20,15 @@ file(GLOB_RECURSE FEATURES
 
 
 file (GLOB_RECURSE RESOURCES
-            "res/*.cpp"             "res/*.h"
+            "res/*.cpp"             "res/*.h"		"res/*.hpp"
             "res/fnv1a/*.cpp"       "res/fnv1a/*.h"
 )
 
 include_directories("src/inc"
                     "src/features"
                     "res/MinHook"
-                    "res/fnv1a")
+                    "res/fnv1a"
+					"res")
 
 add_library(cs2 SHARED ${SOURCES} ${INCLUDE} ${RESOURCES} ${FEATURES} ) 
 

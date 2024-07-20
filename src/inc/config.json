@@ -1,0 +1,65 @@
+{
+	"byte_signatures" : [
+		{
+			"name": "dwViewMatrix",
+			"module": "client.dll",
+			"pattern": "48 8D 0D 00 00 00 00 48 C1 E0 06",
+			"mask": "xxxx????xxxx",
+			"operations": [
+			]
+		},
+		{
+			"name" : "dwLocalPlayerPawn",
+			"module" : "client.dll",
+			"pattern" : "48 8D 05 00 00 00 00 C3 CC CC CC CC CC CC CC CC 48 83 EC 00 8B 0D",
+			"mask" : "xxx????xxxxxxxxxxxx?xx",
+			"operations" : [
+				{
+					"type" : 1,
+					"offset" : 312
+				}
+			]
+		},
+		{
+			"name" : "dwLocalPlayerController",
+			"module" : "client.dll",
+			"pattern" : "48 8B 05 00 00 00 00 48 85 C0 74 4F",
+			"mask" : "xxx????xxxxx",
+			"operations" : [
+			]
+		},
+		{
+			"name" : "dwGameTypes",
+			"module" : "matchmaking.dll",
+			"pattern" : "48 8D 0D 00 00 00 00 E9 00 00 00 00 CC CC CC CC 48 8D 0D 00 00 00 00 E9 00 00 00 00 CC CC CC CC 48 83 EC 00 F0 81 0D",
+			"mask" : "xxx????x????xxxxxxx????x????xxxxxxx?xxx",
+			"operations" : [
+			]
+		},
+		{
+			"name" : "dwGameTypes_mapName",
+			"module" : "matchmaking.dll",
+			"pattern" : "48 8D 0D 00 00 00 00 E9 00 00 00 00 CC CC CC CC 48 8D 0D 00 00 00 00 E9 00 00 00 00 CC CC CC CC 48 83 EC 00 F0 81 0D",
+			"mask" : "xxx????x????xxxxxxx????x????xxxxxxx?xxx",
+			"operations" : [
+				{
+					"type" : 1,
+					"offset" : 288
+				}
+			]
+		},
+		{
+			"name" : "dwForceAttack",
+			"module" : "client.dll",
+			"pattern" : "48 8D 05 00 00 00 00 48 89 45 00 48 8D 4D 00 48 8D 05",
+			"mask" : "xxx????xxx?xxx?xxx",
+			"operations" : [
+				{
+					"type" : 1,
+					"offset" : 48
+				}
+			]
+		}
+
+	]
+}
